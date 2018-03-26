@@ -1,0 +1,77 @@
+@keyframes star-animate {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 0;
+	}
+}
+
+@-moz-keyframes moz-star-animate {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 0;
+	}
+}
+
+@-ms-keyframes ms-star-animate {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 0;
+	}
+}
+
+@-webkit-keyframes webkit-star-animate {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 0;
+	}
+}
+
+.star-lg-animate {
+	animation: star-animate 20s linear;
+	-webkit-animation: webkit-star-animate 20s linear;
+	-moz-animation: moz-star-animate 20s linear;
+	-ms-animation: ms-star-animate 20s linear;
+}
+
+.star-md-animate {
+	animation: star-animate 15s linear;
+	-webkit-animation: webkit-star-animate 15s linear;
+	-moz-animation: moz-star-animate 15s linear;
+	-ms-animation: ms-star-animate 15s linear;
+}
+
+.star-sm-animate {
+	animation: star-animate 10s linear;
+	-webkit-animation: webkit-star-animate 10s linear;
+	-moz-animation: moz-star-animate 10s linear;
+	-ms-animation: ms-star-animate 10s linear;
+}
+
+.star-lg {
+	position: absolute;
+	height: 4px;
+	width: 3px;
+	background-color: white;
+}
+
+.star-md {
+	position: absolute;
+	height: 3px;
+	width: 2px;
+	background-color: white;
+}
+
+.star-sm {
+	position: absolute;
+	height: 2px;
+	width: 1px;
+	background-color: white;
+}
