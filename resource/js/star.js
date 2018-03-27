@@ -1,5 +1,4 @@
 define(['jquery'], function($) {
-	//然后随机时间？随机地方？生成几个星星？然后移动动画？怎么消失？还是不消失？
 	var Star = function() {
 		var star = {};
 		/**
