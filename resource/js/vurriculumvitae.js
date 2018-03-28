@@ -47,6 +47,6 @@ require(['jquery', 'jquery.pagepiling', 'star', 'loading'], function($, undefine
 					break;
 			}
 			changeNum++;
-		}, 500);
+		}, 700);
 	}
 });

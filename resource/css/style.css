@@ -5,6 +5,11 @@
 	user-select: none;
 }
 
+ul,
+li {
+	list-style: none;
+}
+
 p {
 	margin: 0;
 	padding: 0;
@@ -230,3 +235,71 @@ p {
 		left: 80px;
 	}
 }
+
+.technology {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 400px;
+	width: 500px;
+	z-index: 3;
+}
+
+.technology .title {
+	margin-bottom: 20px;
+	font-size: 35px;
+	color: #FFFFFF;
+	-webkit-text-fill-color: white;
+}
+
+.technology-list,
+.aboutme-list {
+	margin: -5px;
+	padding: 5px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.technology-list li {
+	margin: 5px 10px;
+	float: left;
+}
+
+.technology-list li {
+	padding: 2px 10px;
+	border-radius: 5px;
+}
+
+.shulian {
+	background-color: rgba(68, 81, 87, 0.7);
+}
+
+.shuxi {
+	background-color: rgba(68, 81, 87, 0.5);
+}
+
+.liaojie {
+	background-color: rgba(68, 81, 87, 0.2);
+}
+
+.aboutme-list {
+	margin-top: 10px;
+}
+
+.aboutme-list li {
+	margin: 5px 10px;
+	padding: 2px 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.1);
+	float: left;
+}
+
+.aboutme-list li a,
+.aboutme-list li a:link,
+.aboutme-list li a:active,
+.aboutme-list li a:visited,
+.aboutme-list li a:hover {
+	color: white;
+}
+
