@@ -123,10 +123,11 @@ p {
 	width: 100%;
 	height: 230px;
 	background-color: rgb(27, 39, 60);
-	animation: loadingBottom 2s linear;
+	animation: loadingBottom 1.5s linear;
 }
 
-.loading-bottom p {
+
+/*.loading-bottom p {
 	text-align: center;
 	background: -webkit-linear-gradient(white, #38495a);
 	-webkit-background-clip: text;
@@ -135,64 +136,97 @@ p {
 	font-family: "lato", sans-serif;
 	font-size: 25px;
 	margin-top: 70px;
-}
+}*/
 
 .loading-img {
 	position: absolute;
 	height: 35px;
 	width: 1106px;
 	bottom: 230px;
-	animation: loadingImgY 2s linear;
+	animation: loadingImgY 1.5s linear;
 }
 
 .loading-img img {
 	float: left;
 }
 
-@keyframes loadingBottom{
-	from{
+@keyframes loadingBottom {
+	from {
 		height: 0;
 	}
-	to{
+	to {
 		height: 230px;
 	}
 }
 
-@keyframes loadingBottom2{
-	from{
+@keyframes loadingBottom2 {
+	from {
 		height: 230px;
 	}
-	to{
+	to {
 		height: 300px;
 	}
 }
 
-@keyframes loadingImgY{
-	from{
+@keyframes loadingImgY {
+	from {
 		bottom: 0;
 	}
-	
-	to{
+	to {
 		bottom: 230px;
 	}
 }
 
-@keyframes loadingImgY2{
-	from{
+@keyframes loadingImgY2 {
+	from {
 		bottom: 230px;
 	}
-	
-	to{
+	to {
 		bottom: 300px;
 	}
 }
 
-@keyframes pMarginChange{
-	from{
+@keyframes pMarginChange {
+	from {
 		margin-top: 70px;
 	}
-	to{
+	to {
 		margin-top: 140px;
 	}
 }
 
+
+/*moon-sky*/
+
+#moon-sky {
+	background: radial-gradient(ellipse at bottom, rgb(27, 39, 60) 0%, #090a0f 100%);
+}
+
+.moon-content {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+.moon-img {
+	position: absolute;
+	bottom: -500px;
+	left: 0px;
+	transform: rotate(-13deg);
+}
+
+.moon-rise {
+	animation: moonRise 2s linear;
+}
+
+@keyframes moonRise {
+	from {
+		bottom: -500px;
+		left: 0;
+	}
+	to {
+		bottom: 70px;
+		left: 80px;
+	}
+}

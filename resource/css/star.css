@@ -35,24 +35,24 @@
 }
 
 .star-lg-animate {
-	animation: star-animate 20s linear;
-	-webkit-animation: webkit-star-animate 20s linear;
-	-moz-animation: moz-star-animate 20s linear;
-	-ms-animation: ms-star-animate 20s linear;
+	animation: star-animate 40s linear;
+	-webkit-animation: webkit-star-animate 40s linear;
+	-moz-animation: moz-star-animate 40s linear;
+	-ms-animation: ms-star-animate 40s linear;
 }
 
 .star-md-animate {
-	animation: star-animate 15s linear;
-	-webkit-animation: webkit-star-animate 15s linear;
-	-moz-animation: moz-star-animate 15s linear;
-	-ms-animation: ms-star-animate 15s linear;
+	animation: star-animate 30s linear;
+	-webkit-animation: webkit-star-animate 30s linear;
+	-moz-animation: moz-star-animate 30s linear;
+	-ms-animation: ms-star-animate 30s linear;
 }
 
 .star-sm-animate {
-	animation: star-animate 10s linear;
-	-webkit-animation: webkit-star-animate 10s linear;
-	-moz-animation: moz-star-animate 10s linear;
-	-ms-animation: ms-star-animate 10s linear;
+	animation: star-animate 18s linear;
+	-webkit-animation: webkit-star-animate 18s linear;
+	-moz-animation: moz-star-animate 18s linear;
+	-ms-animation: ms-star-animate 18s linear;
 }
 
 .star-lg {

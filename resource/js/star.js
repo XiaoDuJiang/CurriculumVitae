@@ -111,6 +111,7 @@ define(['jquery'], function($) {
 					left: leftPx
 				});
 				$divbox.append($starDiv);
+				//删除节点
 				setTimeout(function() {
 					$starDiv.remove();
 				}, moveTime + 1000);

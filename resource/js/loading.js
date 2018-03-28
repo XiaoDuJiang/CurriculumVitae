@@ -27,15 +27,15 @@ define(['jquery'], function() {
 					//加载100%
 					$(".loading-bottom").css("height", "300px");
 					$(".loading-img").css("bottom", "300px");
-					$(".loading-bottom p").css("margin-top", "140px");
+					//$(".loading-bottom p").css("margin-top", "140px");
 					$(".loading-bottom").css("animation", "loadingBottom2 1s linear");
 					$(".loading-img").css("animation", "loadingImgY2 1s linear");
-					$(".loading-bottom p").css("animation", "pMarginChange 1s linear");
+					//$(".loading-bottom p").css("animation", "pMarginChange 1s linear");
 					//占满屏幕动画
 					setTimeout(function() {
 						stopLoadingX = true;
 						$(".loading-img").remove();
-						$(".loading-bottom p").remove();
+						//$(".loading-bottom p").remove();
 						$(".loading-ball").css("overflow", "visible");
 						var clientHeight = window.innerHeight;
 						var clientWidth = window.innerWidth;
@@ -49,12 +49,12 @@ define(['jquery'], function() {
 						}, null, "linear", function() {
 							$(".loading-box").animate({
 								opacity: 0
-							}, 200, "linear", function() {
+							}, 1000, "linear", function() {
 								$(".loading-box").css("display", "none");
 							});
 							return initFunc();
 						});
-					}, 1500);
+					}, 1000);
 				}
 			}, 2500);
 		}
