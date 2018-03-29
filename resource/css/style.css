@@ -15,6 +15,34 @@ p {
 	padding: 0;
 }
 
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+	color: white;
+}
+
+.clearfix:after {
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
 .section {
 	text-align: center;
 	font: 50px "Microsoft Yahei";
@@ -212,6 +240,7 @@ p {
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .moon-img {
@@ -244,6 +273,7 @@ p {
 	height: 400px;
 	width: 500px;
 	z-index: 3;
+	opacity: 0;
 }
 
 .technology .title {
@@ -272,15 +302,15 @@ p {
 }
 
 .shulian {
-	background-color: rgba(68, 81, 87, 0.7);
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .shuxi {
-	background-color: rgba(68, 81, 87, 0.5);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .liaojie {
-	background-color: rgba(68, 81, 87, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .aboutme-list {
@@ -291,15 +321,200 @@ p {
 	margin: 5px 10px;
 	padding: 2px 10px;
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(68, 81, 87, 0.5);
 	float: left;
 }
 
-.aboutme-list li a,
-.aboutme-list li a:link,
-.aboutme-list li a:active,
-.aboutme-list li a:visited,
-.aboutme-list li a:hover {
-	color: white;
+.technologyShow {
+	animation: technologyShowAni 2s linear;
 }
+
+@keyframes technologyShowAni {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.sun-sky {
+	height: 50%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #394F74 0%, #090a0f 100%);
+	/*background: radial-gradient(ellipse at bottom, #66ccff 0%, #394F74 100%);
+	background: radial-gradient(ellipse at bottom, white 0%, #394F74 100%);
+	background: radial-gradient(ellipse at bottom, white 0%, #ffffcc 100%);*/
+}
+
+.sun-sea {
+	height: 50%;
+	width: 100%;
+	background: radial-gradient(ellipse at top, #090a0f 0%, #394F74 100%);
+	/*background: radial-gradient(ellipse at top, #669999 0%, #394F74 100%);
+	background: radial-gradient(ellipse at top, #666666 0%, #394F74 100%);
+	background: radial-gradient(ellipse at top, #339999 0%, #394F74 100%);*/
+}
+
+.sun-img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sunRise {
+	animation: sunRiseAni 2s linear;
+}
+
+@keyframes sunRiseAni {
+	from {
+		bottom: -100px;
+	}
+	to {
+		bottom: 100px;
+	}
+}
+
+.page-title {
+	position: absolute;
+	z-index: 5;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 35px;
+}
+
+.project-list {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.project-list>div {
+	position: absolute;
+}
+
+.left-top {
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+
+.right-top .project-box,
+.left-top .project-box {
+	bottom: 50px;
+}
+
+.right-top {
+	left: 50%;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+
+.left-bottom {
+	left: 0;
+	top: 50%;
+	width: 50%;
+	height: 50%;
+}
+
+.right-bottom .project-box,
+.left-bottom .project-box {
+	top: 50px;
+}
+
+.right-bottom {
+	left: 50%;
+	top: 50%;
+	width: 50%;
+	height: 50%;
+}
+
+.project-box {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100px;
+	width: 450px;
+	opacity: 0;
+}
+
+.project-title {
+	padding: 0px 10px;
+}
+
+.project-title span {
+	font-size: 22px;
+}
+
+.project-title span:last-child {
+	font-size: 16px;
+	position: relative;
+	top: 7px;
+}
+
+.project-use {
+	font-size: 16px;
+}
+
+.project-use p {
+	text-align: left;
+}
+
+.project-use ul {
+	padding-left: 0px;
+	margin: 5px 0;
+}
+
+.project-use ul li {
+	font-size: 14px;
+	float: left;
+	margin: 3px 8px;
+	padding: 2px 8px;
+	border-radius: 5px;
+	background-color: rgba(68, 81, 87, 0.5);
+	color: white !important;
+	float: left;
+}
+
+.project-code {
+	font-size: 16px;
+	text-align: left;
+}
+
+.color-top {
+	color: #394F74 !important;
+}
+
+.color-bottom {
+	color: white !important;
+}
+
+.project-icon {
+	float: left;
+	width: 60px;
+	height: 60px;
+	padding: 20px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-content {
+	float: right;
+	width: 350px;
+	height: 100px;
+}
+
+
 

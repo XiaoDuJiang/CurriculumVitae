@@ -2,7 +2,8 @@ require.config({
 	paths: {
 		'jquery': 'jquery-3.1.1.min',
 		'star': 'star',
-		'loading': 'loading'
+		'loading': 'loading',
+		'pageinit': 'pageinit'
 	},
 	shim: {
 		/*'star': {
