@@ -43,6 +43,14 @@ a:hover {
 	float: right;
 }
 
+#pp-nav li .active span, .pp-slidesNav .active span {
+	background: white !important;
+}
+
+#pp-nav span, .pp-slidesNav span {
+	border: 1px solid #666666 !important;
+}
+
 .section {
 	text-align: center;
 	font: 50px "Microsoft Yahei";
@@ -344,18 +352,12 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 	background: radial-gradient(ellipse at bottom, #394F74 0%, #090a0f 100%);
-	/*background: radial-gradient(ellipse at bottom, #66ccff 0%, #394F74 100%);
-	background: radial-gradient(ellipse at bottom, white 0%, #394F74 100%);
-	background: radial-gradient(ellipse at bottom, white 0%, #ffffcc 100%);*/
 }
 
 .sun-sea {
 	height: 50%;
 	width: 100%;
 	background: radial-gradient(ellipse at top, #090a0f 0%, #394F74 100%);
-	/*background: radial-gradient(ellipse at top, #669999 0%, #394F74 100%);
-	background: radial-gradient(ellipse at top, #666666 0%, #394F74 100%);
-	background: radial-gradient(ellipse at top, #339999 0%, #394F74 100%);*/
 }
 
 .sun-img {

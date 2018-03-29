@@ -78,7 +78,7 @@ define(['jquery', 'star'], function($, Star) {
 						$(".sun-sea").css("background", "radial-gradient(ellipse at top, #666666 0%, #394F74 100%)");
 						break;
 					case 2:
-						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, #66ccff 0%, #394F74 100%)");
+						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, #ffffcc 0%, #394F74 100%)");
 						$(".sun-sea").css("background", "radial-gradient(ellipse at top, #669999 0%, #394F74 100%)");
 						break;
 					case 3:
