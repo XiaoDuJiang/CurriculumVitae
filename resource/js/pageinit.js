@@ -74,12 +74,12 @@ define(['jquery', 'star'], function($, Star) {
 				//颜色值还要改
 				switch(changeNum) {
 					case 1:
-						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, #66ccff 0%, #394F74 100%)");
-						$(".sun-sea").css("background", "radial-gradient(ellipse at top, #669999 0%, #394F74 100%)");
-						break;
-					case 2:
 						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, white 0%, #394F74 100%)");
 						$(".sun-sea").css("background", "radial-gradient(ellipse at top, #666666 0%, #394F74 100%)");
+						break;
+					case 2:
+						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, #66ccff 0%, #394F74 100%)");
+						$(".sun-sea").css("background", "radial-gradient(ellipse at top, #669999 0%, #394F74 100%)");
 						break;
 					case 3:
 						$(".sun-sky").css("background", "radial-gradient(ellipse at bottom, white 0%, #ffffcc 100%)");
