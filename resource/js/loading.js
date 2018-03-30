@@ -1,3 +1,4 @@
+/*loading动画*/
 define(['jquery'], function() {
 	var Loading = {
 		/*
@@ -52,7 +53,11 @@ define(['jquery'], function() {
 							}, 1000, "linear", function() {
 								$(".loading-box").css("display", "none");
 							});
-							return initFunc();
+							
+							//回调函数
+							if(initFunc) {
+								return initFunc();
+							}
 						});
 					}, 1000);
 				}

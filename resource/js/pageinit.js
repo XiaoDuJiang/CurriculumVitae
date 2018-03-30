@@ -1,11 +1,15 @@
+/*分页初始化*/
 define(['jquery', 'star'], function($, Star) {
 	var pageInit = {
-		pageInit: function() {
+		page1Stop: function() {
+			Star.clear();
+		},
+		page1Init: function() {
 			Star.init($(".star-top"), "lg", 20);
 			Star.init($(".star-top"), "md", 30);
 			Star.init($(".star-top"), "sm", 60);
 		},
-		page2Iint: function() {
+		page2Init: function() {
 			//改变css样式
 			//绑定Class
 			//绑定夜色变化效果
@@ -93,6 +97,17 @@ define(['jquery', 'star'], function($, Star) {
 				changeNum++;
 			}, 800);
 
+		},
+		page4Init: function() {
+			$(".end-font").css({
+				"top": "40%",
+				"opacity": 0
+			});
+			
+			$(".end-font").animate({
+				"top": "50%",
+				"opacity": 1
+			},1500);
 		}
 	}
 

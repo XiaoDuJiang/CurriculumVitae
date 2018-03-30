@@ -43,11 +43,13 @@ a:hover {
 	float: right;
 }
 
-#pp-nav li .active span, .pp-slidesNav .active span {
+#pp-nav li .active span,
+.pp-slidesNav .active span {
 	background: white !important;
 }
 
-#pp-nav span, .pp-slidesNav span {
+#pp-nav span,
+.pp-slidesNav span {
 	border: 1px solid #666666 !important;
 }
 
@@ -518,5 +520,23 @@ a:hover {
 	height: 100px;
 }
 
+#end-page {
+	background: radial-gradient(ellipse at bottom, #ffff99 0%, #99ffff 100%);
+}
 
+.end-font {
+	font-size: 40px;
+	color: #666666;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
 
+.can-select {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}

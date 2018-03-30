@@ -1,3 +1,4 @@
+/*require配置文件*/
 require.config({
 	paths: {
 		'jquery': 'jquery-3.1.1.min',
@@ -6,10 +7,6 @@ require.config({
 		'pageinit': 'pageinit'
 	},
 	shim: {
-		/*'star': {
-			deps: ['jquery'],
-			exports: 'Star'
-		},*/
 		'jquery.pagepiling': {
 			deps: ["jquery"]
 		}

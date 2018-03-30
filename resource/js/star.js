@@ -1,6 +1,12 @@
+/*第一页星星动画*/
 define(['jquery'], function($) {
 	var Star = function() {
 		var star = {};
+
+		var firstMoveAnimateAry = [];
+		var createStarAnimateAry = [];
+		var starDivAry = [];
+
 		/**
 		 * 星星初始化方法
 		 * @param {Jquery} $divbox
@@ -8,8 +14,8 @@ define(['jquery'], function($) {
 		 * @param {int} num 星星数量(10的倍数)
 		 */
 		star.init = function($divbox, size, num) {
+			starDivAry.push($divbox);
 			//首先屏幕中生成星星
-
 			//获取区域
 			var sizeAry = buildSizeAry();
 			//放置位置的数组
@@ -98,7 +104,7 @@ define(['jquery'], function($) {
 
 			var createNum = 5;
 			var createAry;
-			setInterval(function() {
+			var createStarAnimate = setInterval(function() {
 				//伪随机5个区域生成星星
 				if(createNum == 5) {
 					createAry = [0, 20, 40, 60, 80];
@@ -120,6 +126,9 @@ define(['jquery'], function($) {
 				createNum = createNum == 0 ? 5 : createNum;
 			}, createTime);
 
+			firstMoveAnimateAry.push(firstMoveAnimate);
+			createStarAnimateAry.push(createStarAnimate);
+
 		}
 
 		//将屏幕分成十块 避免分布不均匀
@@ -136,8 +145,20 @@ define(['jquery'], function($) {
 			return sizeAry;
 		}
 
+		star.clear = function() {
+			for(var i in firstMoveAnimateAry) {
+				clearInterval(firstMoveAnimateAry[i]);
+			}
+			for(var i in createStarAnimateAry) {
+				clearInterval(createStarAnimateAry[i]);
+			}
+			for(var i in starDivAry){
+				starDivAry[i].html("");
+			}
+		}
+
 		return star;
 	}();
-	
+
 	return Star;
 });
